@@ -1,0 +1,19 @@
+.menu {
+	padding: 3em;
+	border: 2px solid black;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.item-heading {
+	padding: 1em;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+
+	align-self: flex-start;
+}
+.item-details {
+	font-size: 1.2rem;
+	padding: 0.5em;
+}
