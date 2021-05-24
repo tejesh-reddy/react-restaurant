@@ -1,11 +1,10 @@
 import './App.css';
-import { Tables } from './components/Tables';
-import {useState, React} from 'react';
-import { Menu } from './components/Menu';
-import { Popup } from './components/Popup';
+import {useState} from 'react';
+import { Popup } from './components/organisms/Popup';
 import { dragend, dragenter, dragleave, dragover, dragstart, drop } from './helpers/dragHelper';
 import { DefaultItems, DefaultTables } from './helpers/data';
 import { addItem, removeItem, removeItemAll, updateTable } from './helpers/tableHelper';
+import { MainPage } from './components/templates/MainPage';
 
 function App() {
 
@@ -25,15 +24,6 @@ function App() {
   const togglePopup = (table) => {
     setPopupTable({...table});
     setOpen(!open);
-  };
-
-  const calculateAmount = (items) => {
-    let amount = 0;
-    for(let item of items){
-      amount += item.price * item.quantity;
-    }
-
-    return amount;
   };
 
 
@@ -84,13 +74,7 @@ function App() {
 
   return (
     <>
-		<header>
-			<h1>ZeMoSo Restaurant</h1>
-		</header>
-    <div className='page'>
-      <Tables tables={tables} amount={(items) => calculateAmount(items)} clickHandler={clickHandler} drag={drag}/>
-      <Menu items={items} drag={drag}/>
-    </div>
+		<MainPage tables={tables} items={items} clickHandler={clickHandler} drag={drag}/>
     <Popup table={popupTable} closeHandler={() => clickHandler(popupTable.id, [])} open={open} quantHandler={quantityHandler} deleteHandler={deleteHandler}/>
     </>
   );

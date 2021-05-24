@@ -1,0 +1,24 @@
+.search {
+	align-self: center;
+	width: 100%;
+	padding: 1em;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search > input {
+	font-size: 1.5rem;
+
+	width: 80%;
+	height: 2em;
+	padding: 1em;
+	border: hidden;
+
+	box-shadow: 3px 3px #999;
+
+	border-radius: 3%;
+
+}

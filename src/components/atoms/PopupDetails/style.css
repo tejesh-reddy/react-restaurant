@@ -1,0 +1,15 @@
+
+.delete {
+	color: black;
+}
+
+input[type="number"]{
+	padding: 0.5em;
+	font-size: 1.2rem;
+	border: 0;
+	border-bottom: 1px solid black;
+}
+
+input[type="number"]:focus {
+	border-bottom: 2px solid black;
+}

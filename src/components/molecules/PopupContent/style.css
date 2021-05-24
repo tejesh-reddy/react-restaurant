@@ -32,22 +32,10 @@
 	margin-left: 0.2em;
 }
 
-.clickable {
-	padding: 0.2em;
-	font-size: 1em;
-	color: white;
-	border: 0;
-	background-color: rgba(255, 255, 255, 0);
-	cursor: pointer;
-}
-
 .close {
 	padding: 0.6em;
 }
 
-.delete {
-	color: black;
-}
 
 .content-table {
 	position: relative;
@@ -62,30 +50,6 @@
 	font-size: 1.3rem;
 
 	overflow: auto;
-}
-
-.pop-heading {
-	font-size: 2rem;
-	font-weight: bold;
-}
-
-.popup {
-	display: none;
-}
-
-.clickable:focus {
-	outline: none;
-}
-
-input[type="number"]{
-	padding: 0.5em;
-	font-size: 1.2rem;
-	border: 0;
-	border-bottom: 1px solid black;
-}
-
-input[type="number"]:focus {
-	border-bottom: 2px solid black;
 }
 
 .empty {

@@ -1,6 +1,6 @@
-import '../src/components/Tile/style.css';
-import '../src/components/Tables/style.css';
-import '../src/components/Menu/style.css';
+import '../src/components/atoms/Tile/style.css';
+import '../src/components/organisms/Tables/style.css';
+import '../src/components/organisms/Menu/style.css';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

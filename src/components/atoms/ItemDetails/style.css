@@ -1,0 +1,9 @@
+.item-heading {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+.item-details {
+	font-size: 1.2rem;
+	padding: 0.5em;
+}
+

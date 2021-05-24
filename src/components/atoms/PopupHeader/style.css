@@ -1,0 +1,19 @@
+.content-table {
+	position: relative;
+	width: 100%;
+	max-height: 80%;
+	display: grid;
+
+	grid-template-columns: 1fr 2fr 2fr 3fr 1fr;
+	grid-gap: 1em;
+
+	padding: 2em;
+	font-size: 1.3rem;
+
+	overflow: auto;
+}
+
+.pop-heading {
+	font-size: 2rem;
+	font-weight: bold;
+}
