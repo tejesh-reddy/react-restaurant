@@ -1,6 +1,5 @@
 import React from 'react';
 import { Tables } from '.';
-import { ActiveTable, Default as TileDefault } from '../Tile/Tile.stories';
 
 
 export default {

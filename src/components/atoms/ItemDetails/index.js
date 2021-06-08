@@ -5,7 +5,7 @@ import './style.css';
 export const ItemDetails = ({item}) => {
     return (
         <>
-        <Typography variant='p' className="item-heading" style={{ fontWeight: 'bold' }}>{item.name}</Typography>
+        <Typography variant='body1' className="item-heading" >{item.name}</Typography>
 		<div className="item-details">
 			<p>Price: ${item.price}</p>
 		</div>

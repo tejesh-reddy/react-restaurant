@@ -12,7 +12,9 @@ const Template = args => <Popup {...args}/>
 export const Default = Template.bind();
 Default.args = {
     table: {},
-    closeHandler: () => {},
+    closeHandler: () => console.log('closing the popup'),
+    quantHandler: () => 1,
+    deleteHandler: () => console.log('deleted an item'),
     open: true,
 };
 

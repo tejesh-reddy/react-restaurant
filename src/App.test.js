@@ -1,8 +1,23 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('Popup Header Tests', () => {
+
+    const args = {
+
+    };
+
+    it('tests render', () => {
+        const element = render(<App {...args}/>);
+    
+        expect(element).toBeDefined();
+    });
+
+    it('tests mainpage', () => {
+        const element = render(<App {...args}/>);
+        
+        expect(screen.getByText('Menu')).not.toBeNull();
+
+    })
+
 });

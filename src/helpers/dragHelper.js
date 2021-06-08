@@ -29,3 +29,12 @@ export const drop = (ev, id, processDrop) => {
     let itemid = ev.dataTransfer.getData("text");
     processDrop(id, itemid);
 };
+
+export const DefaultDrag = {
+    enter: dragenter,
+    start: dragstart,
+    end: dragend,
+    leave: dragleave,
+    over: dragover,
+    drop: drop,
+}

@@ -11,4 +11,5 @@ const Template = args => <SearchBar {...args}/>;
 export const Default = Template.bind();
 Default.args = {
     placeholder: 'Search',
+    changeHandler: () => 'changed',
 };

@@ -36,6 +36,9 @@
 	padding: 0.6em;
 }
 
+.delete {
+	color: black;
+}
 
 .content-table {
 	position: relative;

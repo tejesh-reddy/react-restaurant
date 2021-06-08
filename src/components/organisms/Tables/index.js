@@ -4,7 +4,8 @@ import './style.css';
 import '../../../index.css';
 import { SearchBar } from '../../atoms/SearchBar';
 import { TableDetails } from '../../atoms/TableDetails';
-import { Typography } from '@material-ui/core';
+import { ThemeProvider, Typography } from '@material-ui/core';
+import { theme } from '../../../theme';
 
 export const Tables = ({tables, amount, clickHandler, drag}) => {
     let [data, setData] = useState(tables);
@@ -16,7 +17,9 @@ export const Tables = ({tables, amount, clickHandler, drag}) => {
         setData(tables.filter((table) => table.heading.toLowerCase().includes(searchTerm)));
     }, [searchTerm, tables]);
 
-    return (<div className='tables'>
+    return (
+    <ThemeProvider theme={theme}>
+    <div className='tables'>
         <div className='heading'><Typography variant='h3' style={{ fontWeight: 'bold' }}>Tables</Typography></div>
         <SearchBar placeholder='Search Tables' value={searchTerm} searchHandler={searchHandler}/>
         
@@ -28,5 +31,5 @@ export const Tables = ({tables, amount, clickHandler, drag}) => {
                 dragover={drag.over}>
                 <TableDetails data={table} calcAmount={amount}/>
             </Tile>)}) :(<Tile><h3 className='table-heading'>Nothing here</h3></Tile>)}
-    </div>);
+    </div></ThemeProvider>);
 };
